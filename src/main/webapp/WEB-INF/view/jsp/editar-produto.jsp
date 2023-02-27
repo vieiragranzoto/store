@@ -36,7 +36,7 @@ form {
 		Informe o nome:
 		<input class="valor" type="text" name="nome" value="${produto.nome}"></input>
 		<input class="valor" type="text" name="descricao" value="${produto.descricao}"></input>
-		<input class="valor" type="text" name="preco" value="${produto.preco}"></input>
+		<input class="valor" type="number" name="preco" value="${produto.preco}" step=".01"></input>
 		<input type="hidden" name="id" value="${produto.id}">
 		<input type="hidden" name="acao" value="EditarProduto">
 		<input class="botao" type="submit" value="Enviar" ></input>

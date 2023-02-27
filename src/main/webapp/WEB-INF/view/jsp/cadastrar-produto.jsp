@@ -37,7 +37,7 @@ form {
 		Informe a descricao:
 		<input class="valor" type="text" name="descricao"></input>
 		Informe o preço:
-		<input class="valor" type="text" name="preco"></input>
+		<input class="valor" type="number" name="preco" step=".01"></input>
 		Informe a categoria:
 		<input class="valor" type="text" name="categoria"></input>
 		<input type="hidden" name="acao" value="CadastrarProduto">

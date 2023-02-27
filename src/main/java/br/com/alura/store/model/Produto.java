@@ -3,24 +3,28 @@ package br.com.alura.store.model;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "produtos")
+@NamedQuery(name = "Produto.produtosPorCategoria", 
+query = "SELECT p FROM Produto p WHERE p.categoria.nome = :nome")
 public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 	private String nome;
-//	@Column(name = "descricao")
 	private String descricao;
 	private BigDecimal preco;
+	@Column(name = "data_cadastro")
 	private LocalDate dataCadastro = LocalDate.now();
 	
 	@ManyToOne
