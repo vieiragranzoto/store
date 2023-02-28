@@ -33,13 +33,13 @@ form {
 <body>
 	<form method="post" action="${recurso}">
 		Informe o nome:
-		<input class="valor" type="text" name="nome"></input>
+		<input class="valor" type="text" name="nome" required></input>
 		Informe a descricao:
-		<input class="valor" type="text" name="descricao"></input>
+		<input class="valor" type="text" name="descricao" required></input>
 		Informe o preço:
-		<input class="valor" type="number" name="preco" step=".01"></input>
+		<input class="valor" type="number" name="preco" step=".01" required></input>
 		Informe a categoria:
-		<input class="valor" type="text" name="categoria"></input>
+		<input class="valor" type="text" name="categoria" required></input>
 		<input type="hidden" name="acao" value="CadastrarProduto">
 		<input class="botao" type="submit" value="Enviar" ></input>
 	</form>

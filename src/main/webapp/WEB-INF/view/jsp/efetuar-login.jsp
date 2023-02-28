@@ -45,9 +45,9 @@ form {
 			<label id="mensagem">Nome de usuario ou senha incorreto!</label>
 		</c:if>
 		<label for="nome">Informe o nome de usuario:</label>
-		<input id="nome" class="valor" type="text" name="nome"></input>
+		<input id="nome" class="valor" type="text" name="nome" required></input>
 		<label for="senha">Informe a senha:</label>
-		<input id="senha" class="valor" type="password" name="senha"></input>
+		<input id="senha" class="valor" type="password" name="senha" required></input>
 		<input type="hidden" name="acao" value="EfetuarLoginUsuario">
 		<input class="botao" type="submit" value="Logar" ></input>
 	</form>
